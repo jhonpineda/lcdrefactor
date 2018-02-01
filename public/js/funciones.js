@@ -171,12 +171,19 @@ function terminar(){
 		        	var jsonData = JSON.parse(data); 
 		        	var previsual1="";
 		        	var previsual2=""; 
+
+		        	var iter1 = e1.split(",");
+		        	var cont1 = Math.floor(iter1[0]/2);
+
+		        	var iter2 = e2.split(",");
+		        	var cont2 = Math.floor(iter2[0]/2);		        	        	
+
 		        	for (i = 0; i < jsonData.out1.length; i++) {					    
-					    previsual1 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out1[i]+"   </pre>";
+					    previsual1 += "<pre style='margin:0;padding:"+cont1+"px;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out1[i]+"</pre>";
 					} 
 					
 					for (i = 0; i < jsonData.out2.length; i++) { 
-					    previsual2 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out2[i]+"   </pre>";
+					    previsual2 += "<pre style='margin:0;padding:"+cont2+"px;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out2[i]+"</pre>";
 					}         
 		            document.getElementById("resultado_entrada_1").innerHTML=previsual1;
 		            document.getElementById("resultado_entrada_2").innerHTML=previsual2;
