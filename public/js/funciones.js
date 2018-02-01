@@ -172,11 +172,11 @@ function terminar(){
 		        	var previsual1="";
 		        	var previsual2=""; 
 		        	for (i = 0; i < jsonData.out1.length; i++) {					    
-					    previsual1 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out1[i]+" </pre>";
+					    previsual1 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out1[i]+"   </pre>";
 					} 
 					
 					for (i = 0; i < jsonData.out2.length; i++) { 
-					    previsual2 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out2[i]+" </pre>";
+					    previsual2 += "<pre style='margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none;float:left;'>"+jsonData.out2[i]+"   </pre>";
 					}         
 		            document.getElementById("resultado_entrada_1").innerHTML=previsual1;
 		            document.getElementById("resultado_entrada_2").innerHTML=previsual2;
